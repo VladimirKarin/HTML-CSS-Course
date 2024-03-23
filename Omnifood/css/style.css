@@ -537,9 +537,30 @@
 }
 
 /* ********************** */
-/* FOOTER SECTION */
+/* FOOTER*/
 /* ********************** */
 
-.section-footer {
+.footer {
     padding: 9.6rem 0;
+}
+
+.logo-col {
+}
+
+.footer-logo {
+}
+
+.copyright {
+}
+
+.address-col {
+}
+
+.footer-heading {
+}
+
+.contacts {
+}
+
+.footer-nav {
 }
