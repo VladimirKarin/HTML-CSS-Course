@@ -18,7 +18,7 @@ Font sizes (px):
     Small: 1.05
     Medium: 1.2
     Large: 1.8
-    
+
     Paragraph default: 1.6
 
 - Letter spacing:
@@ -84,6 +84,7 @@ html {
     /* Percentage of user's browsers font-size setting */
     /* 10 / 16 = 0.625 *100% = 62.5% */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -91,6 +92,9 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    /* Only works if theres is nothing absolutely positioned in relation to body. */
+    overflow-x: hidden;
 }
 
 /* ********************** */
