@@ -25,6 +25,33 @@ navigationButtonElement.addEventListener('click', function () {
     headerElement.classList.toggle('nav-open');
 });
 
+//Smooth Scrolling animation
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const href = link.getAttribute('href');
+
+        //Scroll back to the top
+        if (href === '#')
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+
+        // Scroll to other links
+        if (href !== '#' && href.startsWith('#')) {
+            const sectionElement = document.querySelector('href');
+            sectionElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // CLose mobile navigation
+        if (link.classList.contains('main-nav-link'))
+            headerElement.classList.toggle('nav-open');
+    });
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
