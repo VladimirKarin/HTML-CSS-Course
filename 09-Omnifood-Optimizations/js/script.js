@@ -1,10 +1,21 @@
 // The Start
-const myName = 'Vladimir Karin';
-const h1 = document.querySelector('.heading-primary');
+// const myName = 'Vladimir Karin';
+// const h1 = document.querySelector('.heading-primary');
 
-console.log('Hello World!');
-console.log(myName);
-console.log(h1);
+// h1.addEventListener('click', function () {
+//     h1.textContent = myName;
+//     h1.style.backgroundColor = 'red';
+//     h1.style.padding = '5rem';
+// });
+
+// console.log('Hello World!');
+// console.log(myName);
+// console.log(h1);
+
+//Year Update
+const yearElement = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+yearElement.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
