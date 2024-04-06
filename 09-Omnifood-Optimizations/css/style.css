@@ -6,12 +6,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fdf2e9;
-
-    /* Because we want header to be sticky position later */
+    background-color: var(--main-orange-tint);
     height: 9.6rem;
     padding: 0 4.8rem;
-
     position: relative;
 }
 
@@ -34,7 +31,7 @@
 .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
-    color: #333;
+    color: var(--main-gray-color);
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3s;
@@ -42,7 +39,7 @@
 
 .main-nav-link:hover,
 .main-nav-link:link:active {
-    color: #cf711f;
+    color: var(--main-orange-shade);
 }
 
 .main-nav-link.nav-cta:link,
@@ -50,12 +47,12 @@
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
     color: #fff;
-    background-color: #e67e22;
+    background-color: var(--main-orange-color);
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-    background-color: #cf711f;
+    background-color: var(--main-orange-shade);
 }
 
 /* ********************** */
@@ -90,7 +87,7 @@
 .icon-mobile-nav {
     height: 4.8rem;
     width: 4.8rem;
-    color: #333;
+    color: var(--main-gray-color);
 }
 
 .icon-mobile-nav[name='close'] {
@@ -102,7 +99,7 @@
 /* ********************** */
 
 .section-hero {
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -142,7 +139,7 @@
     height: 4.8rem;
     border-radius: 50%;
     margin-right: -1.6rem;
-    border: 3px solid #fdf2e9;
+    border: 3px solid var(--main-orange-tint);
 }
 
 .delivered-imgs img:last-child {
@@ -155,7 +152,7 @@
 }
 
 .delivered-text span {
-    color: #cf711f;
+    color: var(--main-orange-shade);
     font-weight: 700;
 }
 
@@ -228,17 +225,15 @@
 
 .step-img-box::before {
     width: 60%;
-    /* height: 60%; */
-    /* 60% of parents width */
     padding-bottom: 60%;
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     z-index: -2;
 }
 
 .step-img-box::after {
     width: 45%;
     padding-bottom: 45%;
-    background-color: #fae5d3;
+    background-color: var(--secondary-orange-tint);
     z-index: -1;
 }
 
@@ -280,7 +275,7 @@
     padding: 0.4rem 0.8rem;
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #333;
+    color: var(--main-gray-color);
     border-radius: 100px;
     font-weight: 600;
 }
@@ -299,7 +294,7 @@
 
 .meal-title {
     font-size: 2.4rem;
-    color: #333;
+    color: var(--main-gray-color);
     font-weight: 600;
     margin-bottom: 3.2rem;
 }
@@ -323,7 +318,7 @@
 .meal-icon {
     height: 2.4rem;
     width: 2.4rem;
-    color: #e67e22;
+    color: var(--main-orange-color);
 }
 
 .meal-attribute {
@@ -338,7 +333,7 @@
 /* ********************** */
 
 .section-testimonials {
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     display: grid;
     grid-template-columns: 55fr 45fr;
     align-items: center;
@@ -368,7 +363,7 @@
 
 .testimonial-name {
     font-size: 1.6rem;
-    color: #6f6f6f;
+    color: var(--secondary-gray-color);
 }
 
 .gallery {
@@ -406,11 +401,11 @@
 }
 .pricing-plan--starter {
     justify-self: end;
-    border: 2px solid #fdf2e9;
+    border: 2px solid var(--main-orange-tint);
     padding: 4.6rem;
 }
 .pricing-plan--complete {
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     padding: 4.8rem;
     position: relative;
     overflow: hidden;
@@ -425,7 +420,7 @@
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #333;
+    color: var(--main-gray-color);
     background-color: #ffd43b;
     padding: 0.8rem 8rem;
 
@@ -438,7 +433,7 @@
 }
 
 .plan-name {
-    color: #cf711f;
+    color: var(--main-orange-shade);
     font-weight: 600;
     font-size: 2rem;
     text-transform: uppercase;
@@ -449,7 +444,7 @@
 .plan-price {
     font-size: 6.2rem;
     font-weight: 600;
-    color: #333;
+    color: var(--main-gray-color);
     margin-bottom: 1.6rem;
 }
 
@@ -462,7 +457,7 @@
 .plan-text {
     font-size: 1.6rem;
     line-height: 1.6;
-    color: #6f6f6f;
+    color: var(--secondary-gray-color);
 }
 .plan-sign-up {
     text-align: center;
@@ -476,10 +471,10 @@
 }
 
 .feature-icon {
-    color: #e67e22;
+    color: var(--main-orange-color);
     height: 3.2rem;
     width: 3.2rem;
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     margin-bottom: 3.2rem;
     padding: 1.6rem;
     border-radius: 50%;
@@ -487,7 +482,7 @@
 
 .feature-title {
     font-size: 2.4rem;
-    color: #333;
+    color: var(--main-gray-color);
     font-weight: 700;
     margin-bottom: 1.6rem;
 }
@@ -508,7 +503,11 @@
 .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    background-image: linear-gradient(
+        to right bottom,
+        var(--orange-tint),
+        var(--main-orange-color)
+    );
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
     border-radius: 11px;
     overflow: hidden;
@@ -516,7 +515,7 @@
 
 .cta-text-box {
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-    color: #45260a;
+    color: var(--secondary-orange-shade);
 }
 
 .cta .heading-secondary {
@@ -553,7 +552,7 @@
     font-size: 1.6rem;
     font-weight: 500;
     margin-bottom: 1.2rem;
-    color: #45260a;
+    color: var(--secondary-orange-shade);
 }
 
 .cta-form input,
@@ -563,7 +562,7 @@
     font-size: 1.8rem;
     font-family: inherit;
     border: none;
-    background-color: #fdf2e9;
+    background-color: var(--main-orange-tint);
     color: inherit;
     border-radius: 9px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -614,7 +613,7 @@
 
 .copyright {
     font-size: 1.4rem;
-    color: #767676;
+    color: var(--lighter-gray-color);
     line-height: 1.6;
     margin-top: auto;
 }
@@ -646,7 +645,7 @@
 .footer-link:visited {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #767676;
+    color: var(--lighter-gray-color);
     transition: all 0.3s;
 }
 
